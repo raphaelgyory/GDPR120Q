@@ -1,0 +1,25 @@
+python ./run_qa.py \
+  --model_name_or_path microsoft/deberta-v3-large \
+  --train_file ./data/GDPR120Q_train_formatted.json \
+  --validation_file ./data/GDPR120Q_validation_formatted.json \
+  --test_file ./data/GDPR120Q_test_formatted.json \
+  --do_train \
+  --do_eval \
+  --do_predict \
+  --per_device_train_batch_size 1 \
+  --learning_rate 6e-6 \
+  --num_train_epochs 3 \
+  --max_seq_length 384 \
+  --doc_stride 128 \
+  --version_2_with_negative \
+  --output_dir ./models/deberta-v3-large \
+  --logging_dir ./logs/deberta-v3-large \
+  --logging_steps 10000 \
+  --eval_steps 10000 \
+  --evaluation_strategy steps \
+  --save_strategy steps \
+  --save_steps 10000 \
+  --load_best_model_at_end \
+  --save_total_limit 1 \
+  --metric_for_best_model f1
+

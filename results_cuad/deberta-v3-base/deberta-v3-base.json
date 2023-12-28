@@ -1,0 +1,1 @@
+{'name': 'deberta-v3-base', 'aupr': 0.630163384383964, 'prec_at_80_recall': 0.3562153818214837, 'prec_at_90_recall': 0.14714974239654313}

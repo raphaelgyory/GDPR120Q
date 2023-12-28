@@ -1,0 +1,20 @@
+python ./run_qa.py \
+  --model_name_or_path bert-base-uncased \
+  --dataset_name alzoubi36/policy_qa \
+  --do_train \
+  --do_eval \
+  --do_predict \
+  --per_device_train_batch_size 12 \
+  --learning_rate 3e-5 \
+  --num_train_epochs 4 \
+  --max_seq_length 384 \
+  --doc_stride 128 \
+  --version_2_with_negative \
+  --output_dir ./models/policy_qa \
+  --logging_dir ./logs/policy_qa \
+  --logging_steps 150 \
+  --evaluation_strategy epoch \
+  --save_strategy epoch \
+  --load_best_model_at_end \
+  --save_total_limit 1 \
+  --metric_for_best_model f1

@@ -1,0 +1,1 @@
+{'name': 'bert-base-uncased', 'aupr': 0.6646001587980921, 'prec_at_80_recall': 0.44447009928423, 'prec_at_90_recall': 0.16775677153035642}
