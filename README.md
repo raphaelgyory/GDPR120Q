@@ -12,6 +12,8 @@ The paper uses the `preprocess.py` script to preprocesses the dataset for the `t
 /bin/bash ./scripts/BERT.sh
 ```
 
+The `evaluation_cuad.py` file is based on https://github.com/TheAtticusProject/cuad/blob/main/evaluate.py 
+
 Please cite using the following reference:
 
 ```
